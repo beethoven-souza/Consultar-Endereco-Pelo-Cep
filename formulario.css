@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Rubik', sans-serif;
+}
+
+.container {
+    margin-top: 140px;
+    margin-bottom: -70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width:600px){
+    .container {
+        margin-top: 20px;
+    }
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    
+}
+
+@media(max-width:600px){
+   .form {
+       display: flex;
+       align-items: center;
+       justify-items:center;
+       flex-direction: column;
+       width: 350px;
+       margin-top:110px;
+   }
+}
+
+main .input {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: 0;
+} 
+
+.cep {width: 150px; height: 25px;}
+.endereco {width: 400px;height: 25px}
+.numero{width: 50px; height: 25px;}
+.bairro{width:200px ;height: 25px;}
+.cidade{width:200px ;height: 25px;}
+.estado{width:200px ;height: 25px;}
+
+@media(max-width:600px){
+    .endereco{
+        width: 300px;
+    }
+}
+
+.form button {
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgb(51, 250, 51);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    border:none
+}
+
+.form button:hover{
+    background-color: black;
+    color: white;
+}
+
+.form input {
+    font-weight: bolder;
+}
+
